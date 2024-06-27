@@ -8,8 +8,8 @@ const Navbar = () => {
     setNav(!nav)
   }
   return (
-    <div className='flex justify-center items-center h-16 mx-auto px-4 text-white'>
-        <img src={logo} alt="Logo" className='object-scale-down h-8 w-20 fixed left-4 top-4'/> 
+    <div className='flex justify-center items-center h-100 mx-auto px-4 text-white '>
+        <img src={logo} alt="Logo" className='object-scale-down h-8 w-20 fixed left-8 top-8'/> 
         <ul className='hidden md:flex'>
           <li className='p-4'>Home</li>
           <li className='p-4'>About</li>
@@ -18,8 +18,8 @@ const Navbar = () => {
           <li className='p-4'>Events</li>
         </ul>
 
-        <div onClick={handleNav} className='fixed right-4 top-4 block md:hidden'>
-          {!nav ? <IoIosClose size={20}/> : <IoIosMenu size={20}/>}
+        <div onClick={handleNav} className='fixed right-8 top-8 block md:hidden'>
+          {!nav ? <IoIosClose size={28}/> : <IoIosMenu size={28}/>}
         </div>
 
         <div className={!nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#114331] ease-in-out duration-500' : 'fixed left-[-100%]'}>
