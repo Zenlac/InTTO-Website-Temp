@@ -8,8 +8,8 @@ const Navbar = () => {
     setNav(!nav)
   }
   return (
-    <div className='flex justify-center items-center h-100pt mx-auto px-4 text-white '>
-        <img src={logo} alt="Logo" className='object-scale-down h-50 w-28 fixed left-8 top-8'/> 
+    <div className='flex justify-center items-center h-100pt mx-auto px-4 text-white z-10'>
+        <img src={logo} alt="Logo" className='object-scale-down h-50 w-28 absolute left-8 top-8'/> 
         <ul className='hidden md:flex'>
           <li className='p-4'>Home</li>
           <li className='p-4'>About</li>
@@ -18,11 +18,11 @@ const Navbar = () => {
           <li className='p-4'>Events</li>
         </ul>
 
-        <div onClick={handleNav} className='fixed right-8 top-8 block md:hidden'>
+        <div onClick={handleNav} className='absolute right-8 top-8 block md:hidden z-50'>
           {!nav ? <IoIosClose size={32}/> : <IoIosMenu size={32}/>}
         </div>
 
-        <div className={!nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#114331] ease-in-out duration-500' : 'fixed left-[-100%]'}>
+        <div className={!nav ? 'z-10 fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#114331] ease-in-out duration-500' : 'fixed left-[-100%]'}>
           <img src={logo} alt="Logo" className='object-scale-down h-50 w-28 m-8 '/>
           <ul className='p-4 pt-8 uppercase my-8'>
             <li className='p-4 border-b border-gray-300'>Home</li>
@@ -32,6 +32,8 @@ const Navbar = () => {
             <li className='p-4'>Events</li>
           </ul>
         </div>
+
+
     </div>
     
   )
