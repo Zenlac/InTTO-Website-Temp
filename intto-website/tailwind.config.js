@@ -5,7 +5,15 @@ module.exports = {
     "./public/index.html"
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'sphone': '320px',
+        'lphone': '375px',
+        'tablet': '768px',
+        'laptop': '1024px',
+        'desktop': '1440px',
+      }
+    },
   },
   plugins: [],
 }
