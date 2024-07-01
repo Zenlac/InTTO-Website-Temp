@@ -8,3 +8,12 @@ body{
   background-color: #114331;
   font-family: Poppins;
 }
+
+#background-pattern{
+  background-image: url(./components/images/InTTO\ pattern.png);
+  background-repeat:repeat-y;
+  background-size: cover;
+  opacity: 0.02;
+  filter: brightness(1000%);
+}
+

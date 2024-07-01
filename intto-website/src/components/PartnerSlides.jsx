@@ -11,7 +11,7 @@ import DTI from './images/DTI_Logo_2019 1.png'
 
 const PartnerSlides = () => {
   return (
-    <div className='overflow-x-auto h-auto w-full scroll'>
+    <div className='overflow-x-auto h-auto w-full scroll z-10'>
         <ul className='flex whitespace-nowrap py-2 inset-0 z-10'>
             <li><img src={UC}     className='inline-block mx-2' alt='UC logo' /></li>
             <li><img src={QBO}    className='inline-block mx-2' alt='QBO logo' /></li>
