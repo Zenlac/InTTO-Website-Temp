@@ -7,12 +7,12 @@
 body{
   background-color: #114331;
   font-family: Poppins;
+  color: white;
 }
 
 #background-pattern{
   background-image: url(./components/images/InTTO\ pattern.png);
-  background-repeat:repeat-y;
-  background-size: cover;
+  background-repeat:repeat;
   opacity: 0.02;
   filter: brightness(1000%);
 }
